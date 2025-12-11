@@ -1,0 +1,125 @@
+.header {
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Inter, sans-serif;
+}
+
+.header__info{
+    display: flex;
+    gap: 59px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header__nav {
+    display: flex;
+    gap: 46px;
+}
+
+.header__nav a.active {
+    font-weight: 700;
+}
+.header__nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-family: "Roboto Thin", sans-serif;
+}
+.header__icons{
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+}
+.header__icons button {
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 31px;
+    height: 31px;
+}
+
+.header__burger {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .header__logo-white {
+        color: white;
+        z-index: 10;
+    }
+    .header {
+        padding: 24px 14px 29px 20px;
+    }
+    .header__logo {
+        font-size: 18px;
+    }
+    .header__burger {
+        display: block;
+        z-index: 10;
+
+    }
+    .header__info{
+        display: none;
+    }
+    .header__burger button {
+        background-color: transparent;
+        border: none;
+    }
+    .header__mobile {
+        background-color: #000000;
+        position: fixed;
+        top: 0;
+        padding-top: 109px;
+        width: 100dvw;
+        height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        z-index: 9;
+    }
+    .header__mobile-nav {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        padding-left:45px;
+        gap: 30px;
+    }
+    .header__mobile-nav a.active {
+        font-weight: 700;
+    }
+    .header__mobile-nav a {
+        text-decoration: none;
+        /* color: #333; */
+        color: #FFFFFF;
+        font-weight: 500;
+        font-family: "Roboto Thin", sans-serif;
+        font-size: 14px;
+    }
+    .header__icons{
+        display: flex;
+        flex-direction: row;
+        gap: 36px;
+    }
+    .header__icons button {
+        background: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #FFFFFF;
+        color: white;
+        cursor: pointer;
+        border-radius: 50px;
+        width: 31px;
+        height: 31px;
+    }
+}
