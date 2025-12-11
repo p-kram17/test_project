@@ -195,7 +195,7 @@ export default function Footer() {
 
                     {/* Newsletter */}
                 </div>
-                    <div className="footer__column footer__column--newsletter">
+                    <div className="footer__column footer__column--newsletter mobile">
                         <h3 className="footer__title">Join Our Newsletter</h3>
                         <div className="footer__newsletter">
                             <div className="footer__column--newsletter-form">
@@ -209,13 +209,6 @@ export default function Footer() {
                                 </button>
                             </div>
                             <p className="footer__note">
-                                {/* <span>
-                                    *
-                                    </span>
-                                    <span>
-                                    
-                                    Will send you weekly updates for your better tour management.
-                                    </span> */}
                                     *&nbsp; Will send you weekly updates for your better tool management.
                             </p>
                         </div>
@@ -223,4 +216,5 @@ export default function Footer() {
             </div>
         </footer>
     );
+
 }
